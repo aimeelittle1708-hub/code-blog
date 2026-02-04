@@ -1,5 +1,5 @@
 .venv/
-eny.py
+env.py
 __pycache__
 *.py[cod]
 db.Splite3
