@@ -1,5 +1,5 @@
 from django.db import models
-#from cloudinary.models import CloudinaryField
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -9,7 +9,7 @@ class About(models.Model):
     Stores the About Me page content. :model:`about.About`
     """
     title = models.CharField(max_length=200, unique=True)
-#    profile_image = CloudinaryField('image', default='placeholder')
+    profile_image = CloudinaryField('image', default='placeholder')
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
 
