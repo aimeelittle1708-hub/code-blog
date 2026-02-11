@@ -54,3 +54,8 @@ def post_detail(request, slug):
             "comment_form": comment_form,
         },
     )
+
+def comment_edit(request, slug, comment_id):
+    """View for editing a comment"""
+    # Add your comment edit logic here
+    pass
